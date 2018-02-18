@@ -1,0 +1,5 @@
+<snippet>
+	<content>\dots</content>
+	<tabTrigger>...</tabTrigger>
+	<scope>text.tex.latex string.other.math, text.tex.latex meta.environment.math</scope>
+</snippet>

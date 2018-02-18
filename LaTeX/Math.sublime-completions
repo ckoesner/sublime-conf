@@ -1,0 +1,182 @@
+{
+        "scope": "text.tex.latex string.other.math, text.tex.latex meta.environment.math",
+
+        "completions":
+        [
+
+        	//Kleinbuchstaben
+			{ "trigger": "a", "contents": "\\alpha" },
+			{ "trigger": "b", "contents": "\\beta" },
+			{ "trigger": "g", "contents": "\\gamma" },
+			{ "trigger": "d", "contents": "\\delta" },
+			{ "trigger": "d", "contents": "\\partial" },
+			{ "trigger": "e", "contents": "\\epsilon" },
+			{ "trigger": "z", "contents": "\\zeta"},
+			{ "trigger": "h", "contents": "\\eta" },
+			{ "trigger": "q", "contents": "\\theta" },
+			{ "trigger": "i", "contents": "\\iota" },
+			{ "trigger": "k", "contents": "\\kappa" },
+			{ "trigger": "l", "contents": "\\lambda" },
+			{ "trigger": "m", "contents": "\\mu" },
+			{ "trigger": "n", "contents": "\\nu" },
+			{ "trigger": "x", "contents": "\\xi" },
+			{ "trigger": "p", "contents": "\\pi" },
+			{ "trigger": "r", "contents": "\\rho" },
+			{ "trigger": "s", "contents": "\\sigma" },
+			{ "trigger": "t", "contents": "\\tau" },
+			{ "trigger": "u", "contents": "\\upsilon" },        
+			{ "trigger": "f", "contents": "\\phi" },
+			{ "trigger": "c", "contents": "\\chi" },
+			{ "trigger": "y", "contents": "\\psi" },
+			{ "trigger": "w", "contents": "\\omega" },
+			{ "trigger": "v", "contents": "\\digamma"},
+
+
+			//Grossbuchstaben griechisch
+			{ "trigger": "G", "contents": "\\Gamma " },
+			{ "trigger": "D", "contents": "\\Delta " },
+			{ "trigger": "Q", "contents": "\\Theta " },
+			{ "trigger": "L", "contents": "\\Lambda " },
+			{ "trigger": "X", "contents": "\\Xi " },
+			{ "trigger": "P", "contents": "\\Pi " },
+			{ "trigger": "S", "contents": "\\Sigma " },
+			{ "trigger": "F", "contents": "\\Phi " },
+			{ "trigger": "Y", "contents": "\\Psi " },
+			{ "trigger": "W", "contents": "\\Omega " },
+
+
+			//Zahlenmengen
+			{ "trigger": "C\t komplexe Zahlen", "contents": "\\mathbb{C} " },
+			{ "trigger": "N\t natürliche Zahlen", "contents": "\\mathbb{N} " },
+			{ "trigger": "R\t reelle Zahlen", "contents": "\\mathbb{R} " },
+			{ "trigger": "Z\t ganze Zahlen", "contents": "\\mathbb{Z} " },
+
+
+			//Spezielle Grossbuchstaben
+			{ "trigger": "E ", "contents": "\\mathbf{E} " },
+			{ "trigger": "T", "contents": "\\mathcal{T} " },
+			{ "trigger": "F", "contents": "\\mathcal{F} " },
+			{ "trigger": "U", "contents": "\\mathcal{U} " },
+
+
+
+			//Einfache Befehle
+			{ "trigger": "0set", "contents": "\\emptyset " },
+			{ "trigger": "ex", "contents": "\\exists " },
+			{ "trigger": "sm", "contents": "\\setminus " },
+			{ "trigger": "ld", "contents": "\\ldots" },
+			{ "trigger": "cd", "contents": "\\cdot" },
+			{ "trigger": "cd", "contents": "\\cdots" },
+			{ "trigger": "int\t Integral", "contents": "\\int "},
+			{ "trigger": "int\t Integral mit Grenzen", "contents": "\\int_{$1}^{$2} "},
+			{ "trigger": "lim\t Grenzwert", "contents": "\\lim "},
+			{ "trigger": "lim\t Grenzwert mit Index", "contents": "\\lim_{$1} "},
+			{ "trigger": "inf", "contents": "\\infty "},
+			{ "trigger": "in", "contents": "\\in "},
+			{ "trigger": "nin", "contents": "\\notin "},
+			{ "trigger": "dist", "contents": "d($1, $2)"},
+			{ "trigger": "fa", "contents": "\\forall "},
+			{ "trigger": "sum\t Summe", "contents": "\\sum "},
+			{ "trigger": "sum\t Summe mit Index", "contents": "\\sum_{$1}^{$2} "},
+			{ "trigger": "sup", "contents": "\\sup"},
+			{ "trigger": "sup", "contents": "\\sup_{$1}"},
+			{ "trigger": "ss", "contents": "\\subset "},
+			{ "trigger": "sseq", "contents": "\\subseteq "},
+			{ "trigger": "ss2", "contents": "\\supset "},
+			{ "trigger": "ss2eq", "contents": "\\supseteq "},
+			{ "trigger": "bar", "contents": "\\bar{$1}$0"},
+			{ "trigger": "ul", "contents": "\\underline{$1}$0"},
+			{ "trigger": "qd", "contents": "\\quad"},
+			{ "trigger": "qqd", "contents": "\\qquad"},
+			{ "trigger": "pr", "contents": "\\prod"},
+			{ "trigger": "prod", "contents": "\\prec"},
+			{ "trigger": "prec", "contents": "\\preceq"},
+			{ "trigger": "preceq", "contents": "\\preccurlyeq"},
+			{ "trigger": "preccurlyeq", "contents": "\\prod"},
+			{ "trigger": "frac", "contents": "\\frac"},
+			{ "trigger": "frac", "contents": "\\frac{$1}{$2}$0"},
+			{ "trigger": "bs", "contents": "\\backslash"},
+			{ "trigger": "bss", "contents": "\\boldsymbol{$1}$0"},
+			{ "trigger": "sq", "contents": "\\sqrt{$1}"},
+			{ "trigger": "tim", "contents": "\\times"},
+			{ "trigger": "bin", "contents": "\\binom{$1}{$2}$0"},
+
+
+
+			//Verknuepfungen
+			{ "trigger": "la", "contents": "\\langle"},
+			{ "trigger": "ra", "contents": "\\rangle"},
+			{ "trigger": "cu", "contents": "\\cup"},
+			{ "trigger": "ca", "contents": "\\cap"},
+			{ "trigger": "cu", "contents": "\\bigcup"},
+			{ "trigger": "ca", "contents": "\\bigcap"},
+
+
+			//Pfeile
+			{ "trigger": "lar", "contents": "\\leftarrow"},
+			{ "trigger": "lar", "contents": "\\longleftarrow"},
+			{ "trigger": "lar", "contents": "\\nwarrow"},
+			{ "trigger": "lar", "contents": "\\swarrow"},
+
+			{ "trigger": "Lar", "contents": "\\Leftarrow"},
+			{ "trigger": "Lar", "contents": "\\Longleftarrow"},
+
+			{ "trigger": "rar", "contents": "\\rightarrow"},
+			{ "trigger": "rar", "contents": "\\longrightarrow"},
+
+			{ "trigger": "Rar", "contents": "\\Rightarrow"},
+			{ "trigger": "Rar", "contents": "\\Longrightarrow"},
+
+			{ "trigger": "lr", "contents": "\\leftrightarrow"},
+			{ "trigger": "lr", "contents": "\\longleftrightarrow"},
+
+			{ "trigger": "iff", "contents": "\\Leftrightarrow"},
+			{ "trigger": "Lr", "contents": "\\Leftrightarrow"},
+			{ "trigger": "Lr", "contents": "\\Longleftrightarrow"},
+
+			{ "trigger": "up", "contents": "\\uparrow"},
+			{ "trigger": "do", "contents": "\\downarrow"},
+
+
+			//Mathematik Schriftarten
+			{ "trigger": "it", "contents": "\\mathit{$1}$0"},
+			{ "trigger": "bf", "contents": "\\mathbf{$1}$0"},
+			{ "trigger": "bb", "contents": "\\mathbb{$1}$0"},
+			{ "trigger": "rm", "contents": "\\mathrm{$1}$0"},
+			{ "trigger": "sf", "contents": "\\mathsf{$1}$0"},
+			{ "trigger": "cal", "contents": "\\mathcal{$1}$0"},
+			{ "trigger": "frak", "contents": "\\mathfrak{$1}$0"},
+			{ "trigger": "trm", "contents": "\\textrm{$1}$0"},
+			{ "trigger": "ov", "contents": "\\overline{$0}"},
+			{ "trigger": "hat", "contents": "\\hat{$1}$0"},
+			{ "trigger": "td", "contents": "\\tilde{$1}$0"},
+			{ "trigger": "ch", "contents": "\\check{$1}$0"},
+
+			//Klammern
+			{ "trigger": "kr", "contents": "\\left( $1 \\right)$0"},
+			{ "trigger": "kd", "contents": "\\left\\langle $1 \\right\\rangle$0"},
+			{ "trigger": "ke", "contents": "\\left[ $1 \\right]$0"},
+			{ "trigger": "kg", "contents": "\\left\\\\{ $1 \\right\\\\}$0"},
+
+			//Spezifische Befehle
+			{ "trigger": "tor", "contents": "(\\X, \\mathcal{F})"},
+			{ "trigger": "mer", "contents": "(\\mathcal{$1}, d)$0"},
+			{ "trigger": "folge", "contents": "\\left($1_n\\right)_{n \\in \\mathbb{N}}"},
+			{ "trigger": "norm", "contents": "\\left\\|$1\\right\\|$0"},
+			{ "trigger": "abs", "contents": "\\left|$1\\right|$0"},
+			{ "trigger": "l1loc", "contents": "L^{1}_{\\textrm{loc}}"},
+
+
+			{ "trigger": "m2", "contents": "$1 & $2 \\\\\\\\ \n$0"},
+			{ "trigger": "m3", "contents": "$1 & $2 & $3 \\\\\\\\ \n$0"},
+			{ "trigger": "m4", "contents": "$1 & $2 & $3 & $4 \\\\\\\\ \n$0"},
+			{ "trigger": "m5", "contents": "$1 & $2 & $3 & $4 & $5 \\\\\\\\ \n$0"},
+
+
+			{ "trigger": "v2", "contents": "\\begin{pmatrix}\n$1 \\\\\\\\ $2 \n\\end{pmatrix}\n$0"},
+			{ "trigger": "v3", "contents": "\\begin{pmatrix}\n$1 \\\\\\\\ $2 \\\\\\\\ $3 \n\\end{pmatrix}\n$0"},
+			{ "trigger": "v4", "contents": "\\begin{pmatrix}\n$1 \\\\\\\\ $2 \\\\\\\\ $3 \\\\\\\\ $4 \n\\end{pmatrix}\n$0"},
+			{ "trigger": "v5", "contents": "\\begin{pmatrix}\n$1 \\\\\\\\ $2 \\\\\\\\ $3 \\\\\\\\ $4 \\\\\\\\ $5 \n\\end{pmatrix}\n$0"}
+
+        ]
+}

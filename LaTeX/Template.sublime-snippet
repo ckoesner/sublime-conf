@@ -1,0 +1,141 @@
+<snippet>
+	<content><![CDATA[
+\\documentclass[]{article}
+% T1 font encoding
+\\usepackage[T1]{fontenc}
+
+% utf8 file encoding
+\\usepackage[utf8]{inputenc}
+
+% custom margin to article class
+\\usepackage[a4paper,includeheadfoot,margin=2.54cm]{geometry}
+
+% math packages
+\\usepackage{amsmath,amsfonts,amsthm, amssymb}
+
+% german document
+\\usepackage[german]{babel}
+
+% customizing section commands
+\\usepackage{sectsty}
+
+% customizing headers and footers
+\\usepackage{fancyhdr}
+
+% degree symbol
+\\usepackage{gensymb}
+
+% wide hat symbol
+\\usepackage{scalerel,stackengine}
+
+% links
+\\usepackage{hyperref}
+
+% listings
+\\usepackage{listings}
+
+% frames around theorems
+\\usepackage{mdframed}
+
+% colors for theorem boxes
+\\usepackage[usenames, dvipsnames]{xcolor}
+
+% font
+\\usepackage{fourier}
+
+\\newcommand{\\estb}[1]
+{\\ensuremath{\\hat{\\beta}}_{(#1)}}
+
+\\newcommand{\\deriv}[3][]
+{\\ensuremath{
+\\frac{\\partial^{#1} {#2}}{\\partial {#3}^{#1}}
+}}
+
+\\newcommand{\\erwartungswert}[1]{\\mathbf{E}\\left[#1\\right]}
+\\newcommand{\\varianz}[1]{\\mathbf{Var}\\left[#1\\right]}
+\\newcommand{\\indikator}[1]{\\mathbb{1}_{#1}}
+
+\\stackMath
+\\newcommand\\reallywidehat[1]{%
+\\savestack{\\tmpbox}{\\stretchto{%
+  \\scaleto{%
+    \\scalerel*[\\widthof{\\ensuremath{#1}}]{\\kern-.6pt\\bigwedge\\kern-.6pt}%
+    {\\rule[-\\textheight/2]{1ex}{\\textheight}}%WIDTH-LIMITED BIG WEDGE
+  }{\\textheight}% 
+}{0.5ex}}%
+\\stackon[1pt]{#1}{\\tmpbox}%
+}
+\\parskip 1ex
+
+\\allsectionsfont{\\normalfont\\scshape}
+\\renewcommand\\thesubsection{\\alph{subsection})}
+
+\\pagenumbering{arabic}
+
+\\pagestyle{fancy} %eigener Seitenstil
+
+\\renewcommand{\\headrulewidth}{0pt} % Remove header underlines
+\\renewcommand{\\footrulewidth}{0pt} % Remove footer underlines
+\\setlength{\\headheight}{13.6pt} % Customize the height of the header
+
+\\newcommand{\\horrule}[1]{\\rule{\\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\\fancyhead[L]{\\docname}
+\\fancyhead[R]{Christoph Kösner, e1326860}
+\\fancyfoot[C]{\\thepage} %Seitennummer
+
+% Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+\\setlength\\parindent{0pt} 
+
+
+\\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+% Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\\numberwithin{figure}{section} 
+
+% Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\\numberwithin{table}{section} 
+
+
+\\newmdtheoremenv[linecolor=black]{theorem}{Satz}[section]
+\\newmdtheoremenv[linecolor=black]{satz}[theorem]{Satz}
+\\newmdtheoremenv[linecolor=black]{task}[theorem]{Aufgabe}
+
+
+\\newmdtheoremenv[linecolor=black]{lemma}[theorem]{Lemma}
+\\newmdtheoremenv[linecolor=black]{corollar}[theorem]{Korollar}
+\\newmdtheoremenv[linecolor=black]{proposition}[theorem]{Proposition}
+
+\\newmdtheoremenv[linecolor=black]{definition}[theorem]{Definition}
+
+
+\\theoremstyle{remark}
+\\newtheorem{remark}[theorem]{Anmerkung}
+
+
+\\addtocounter{theorem}{$1}
+
+
+\\newcommand{\\docname}{$2}
+
+\\title{
+\\normalfont \\normalsize 
+\\textsc{TU Wien, Statistik und Wirtschaftsmathematik} \\\\ [25pt]
+\\horrule{0.5pt} \\\\ [0.4cm]
+\\huge \docname \\\\
+\\horrule{2pt} \\\\ [0.5cm]
+}
+\\author{Christoph Kösner, e1326860} 
+\\date{\\normalsize\\today}
+
+
+\\begin{document}
+\\maketitle
+
+$0
+
+\\end{document}
+]]></content>
+	<tabTrigger>template</tabTrigger>
+	<scope>text.tex.latex</scope>
+</snippet>
