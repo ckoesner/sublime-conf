@@ -100,7 +100,8 @@
 			{ "trigger": "sq", "contents": "\\sqrt{$1}"},
 			{ "trigger": "tim", "contents": "\\times"},
 			{ "trigger": "bin", "contents": "\\binom{$1}{$2}$0"},
-
+			{ "trigger": "leq", "contents": "\\leq "},
+			{ "trigger": "geq", "contents": "\\geq "},
 
 
 			//Verknuepfungen
@@ -157,6 +158,8 @@
 			{ "trigger": "kd", "contents": "\\left\\langle $1 \\right\\rangle$0"},
 			{ "trigger": "ke", "contents": "\\left[ $1 \\right]$0"},
 			{ "trigger": "kg", "contents": "\\left\\\\{ $1 \\right\\\\}$0"},
+			{ "trigger": "floor", "contents": "\\left\\lfloor $1 \\right\\rfloor$0"},
+			{ "trigger": "ceil", "contents": "\\left\\lceil $1 \\right\\rceil$0"},
 
 			//Spezifische Befehle
 			{ "trigger": "tor", "contents": "(\\X, \\mathcal{F})"},
@@ -164,7 +167,6 @@
 			{ "trigger": "folge", "contents": "\\left($1_n\\right)_{n \\in \\mathbb{N}}"},
 			{ "trigger": "norm", "contents": "\\left\\|$1\\right\\|$0"},
 			{ "trigger": "abs", "contents": "\\left|$1\\right|$0"},
-			{ "trigger": "l1loc", "contents": "L^{1}_{\\textrm{loc}}"},
 
 
 			{ "trigger": "m2", "contents": "$1 & $2 \\\\\\\\ \n$0"},
