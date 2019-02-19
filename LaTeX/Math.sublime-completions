@@ -78,6 +78,10 @@
 			{ "trigger": "fa", "contents": "\\forall "},
 			{ "trigger": "sum\t Summe", "contents": "\\sum "},
 			{ "trigger": "sum\t Summe mit Index", "contents": "\\sum_{$1}^{$2} "},
+			{ "trigger": "min\t Minimum", "contents": "\\min "},
+			{ "trigger": "min\t Minimum mit Index", "contents": "\\min_{$1}^{$2} "},
+			{ "trigger": "max\t Maximum", "contents": "\\max "},
+			{ "trigger": "max\t Maximum mit Index", "contents": "\\max_{$1}^{$2} "},
 			{ "trigger": "sup", "contents": "\\sup"},
 			{ "trigger": "sup", "contents": "\\sup_{$1}"},
 			{ "trigger": "ss", "contents": "\\subset "},
@@ -103,6 +107,9 @@
 			{ "trigger": "leq", "contents": "\\leq "},
 			{ "trigger": "geq", "contents": "\\geq "},
 
+            //User defined commands
+			{ "trigger": "exp", "contents": "\\expectation{$1}$0"},
+			{ "trigger": "var", "contents": "\\variance{$1}$0"},
 
 			//Verknuepfungen
 			{ "trigger": "la", "contents": "\\langle"},
