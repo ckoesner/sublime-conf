@@ -1,5 +1,4 @@
 {
 	"selector": "text.tex.latex",
-	"cmd": ["pdflatex","-file-line-error", "-synctex=-1", "-interaction=nonstopmode", "-shell-escape", "$file"],
-	"shell": true
+	"cmd": ["pdflatex","-file-line-error", "-synctex=-1", "-interaction=nonstopmode", "-shell-escape", "$file"]
 }
