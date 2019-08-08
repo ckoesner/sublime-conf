@@ -168,12 +168,12 @@
 			{ "trigger": "floor", "contents": "\\left\\lfloor $1 \\right\\rfloor$0"},
 			{ "trigger": "ceil", "contents": "\\left\\lceil $1 \\right\\rceil$0"},
 
-			//Spezifische Befehle
-			{ "trigger": "tor", "contents": "(\\X, \\mathcal{F})"},
-			{ "trigger": "mer", "contents": "(\\mathcal{$1}, d)$0"},
-			{ "trigger": "folge", "contents": "\\left($1_n\\right)_{n \\in \\mathbb{N}}"},
-			{ "trigger": "norm", "contents": "\\left\\|$1\\right\\|$0"},
-			{ "trigger": "abs", "contents": "\\left|$1\\right|$0"},
+            { "trigger": "sc", "contents": "\\scalprod{$1}{$2}$0"},
+            { "trigger": "norm", "contents": "\\norm{$1}$0"},
+            { "trigger": "abs", "contents": "\\abs{$1}$0"},
+
+            
+
 
 
 			{ "trigger": "m2", "contents": "$1 & $2 \\\\\\\\ \n$0"},
