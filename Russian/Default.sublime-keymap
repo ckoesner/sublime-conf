@@ -54,7 +54,7 @@
 		]
 	},
 	{
-		"keys": ["ö"], 
+		"keys": ["j", "o"], 
 		"command": "insert_snippet", "args": {"contents": "ё"},
 		"context":  [
 			{
@@ -63,7 +63,7 @@
 		]
 	},
 	{
-		"keys": ["s","c","h"], 
+		"keys": ["s","h"], 
 		"command": "insert_snippet", "args": {"contents": "ж"},
 		"context":  [
 			{
@@ -199,15 +199,6 @@
 	},
 	{
 		"keys": ["c", "h"], 
-		"command": "insert_snippet", "args": {"contents": "б"},
-		"context":  [
-			{
-			"key": "selector", "operator": "equal", "operand": "source.rus"
-			}
-		]
-	},
-	{
-		"keys": ["c", "h"], 
 		"command": "insert_snippet", "args": {"contents": "х"},
 		"context":  [
 			{
@@ -225,7 +216,7 @@
 		]
 	},
 	{
-		"keys": ["t", "s", "c", "h"], 
+		"keys": ["z", "h"], 
 		"command": "insert_snippet", "args": {"contents": "ч"},
 		"context":  [
 			{
@@ -234,8 +225,44 @@
 		]
 	},
 	{
-		"keys": ["s", "h"], 
+		"keys": ["q"], 
 		"command": "insert_snippet", "args": {"contents": "ш"},
+		"context":  [
+			{
+			"key": "selector", "operator": "equal", "operand": "source.rus"
+			}
+		]
+	},
+	{
+		"keys": ["q", "q"], 
+		"command": "insert_snippet", "args": {"contents": "щ"},
+		"context":  [
+			{
+			"key": "selector", "operator": "equal", "operand": "source.rus"
+			}
+		]
+	},
+	{
+		"keys": ["ö", "ö"], 
+		"command": "insert_snippet", "args": {"contents": "ъ"},
+		"context":  [
+			{
+			"key": "selector", "operator": "equal", "operand": "source.rus"
+			}
+		]
+	},
+	{
+		"keys": ["ö"], 
+		"command": "insert_snippet", "args": {"contents": "ь"},
+		"context":  [
+			{
+			"key": "selector", "operator": "equal", "operand": "source.rus"
+			}
+		]
+	},
+	{
+		"keys": ["ü"], 
+		"command": "insert_snippet", "args": {"contents": "ы"},
 		"context":  [
 			{
 			"key": "selector", "operator": "equal", "operand": "source.rus"
