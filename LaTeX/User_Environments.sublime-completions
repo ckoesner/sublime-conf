@@ -8,7 +8,7 @@
 		{ "trigger": "cor", "contents": "\\begin{corollar}[$1]\n$2\n\\end{corollar}" },
 		{ "trigger": "prop", "contents": "\\begin{proposition}[$1]\n$2\n\\end{proposition}" },
 		{ "trigger": "rem", "contents": "\\begin{remark}[$1]\n$2\n\\end{remark}" },
-		{ "trigger": "eq", "contents": "\\begin{equation*}\n$1\n\\end{equation*}" },
+		{ "trigger": "eq", "contents": "\\begin{equation*}\n\t$1\n\\end{equation*}\n" },
 		{ "trigger": "al", "contents": "\\begin{align*}\n$1\n\\end{align*}" },
 		{ "trigger": "antwort", "contents": "\\begin{antwort}\n\t$1\n\\end{antwort}\n" },
 		{ "trigger": "frage", "contents": "\\begin{frage}\n\t$1\n\\end{frage}\n" }

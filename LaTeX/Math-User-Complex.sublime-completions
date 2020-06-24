@@ -1,0 +1,15 @@
+{
+        "scope": "text.tex.latex string.other.math, text.tex.latex meta.environment.math",
+
+        "completions":
+        [
+			{ "trigger": "ind", "contents": "\\indicator{$1}" },
+			{ "trigger": "sp", "contents": "\\scalarProduct{$1}{$2}" },
+			{ "trigger": "exp", "contents": "\\expectedValue{$1}$0"},
+			{ "trigger": "var", "contents": "\\variance{$1}$0"},
+			{ "trigger": "cov", "contents": "\\covariance{$1}{$2}$0"},
+			{ "trigger": "fset", "contents": "\\setFamily{$1}$0"},
+			{ "trigger": "abs", "contents": "\\abs{$1}$0"},
+			{ "trigger": "norm", "contents": "\\\\${1:e/p/sup/op/f}norm{$2}$0"}
+		]
+}

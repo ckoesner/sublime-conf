@@ -1,0 +1,11 @@
+{
+        "scope": "text.tex.latex string.other.math, text.tex.latex meta.environment.math",
+
+        "completions":
+        [
+			{ "trigger": "prod", "contents": "crossprod"},
+			{ "trigger": "prod", "contents": "kronprod"},
+			{ "trigger": "prod", "contents": "kraoprod"},
+			{ "trigger": "prod", "contents": "hadaprod"}
+		]
+}

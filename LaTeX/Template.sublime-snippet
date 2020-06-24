@@ -43,29 +43,7 @@
 % font
 \\usepackage{fourier}
 
-\\newcommand{\\estb}[1]
-{\\ensuremath{\\hat{\\beta}}_{(#1)}}
-
-\\newcommand{\\deriv}[3][]
-{\\ensuremath{
-\\frac{\\partial^{#1} {#2}}{\\partial {#3}^{#1}}
-}}
-
-\\newcommand{\\expectation}[1]{\\mathbf{E}\\left[#1\\right]}
-\\newcommand{\\variance}[1]{\\mathbf{Var}\\left[#1\\right]}
-\\newcommand{\\indicator}[1]{\\mathbb{1}_{#1}}
-
-\\stackMath
-\\newcommand\\reallywidehat[1]{%
-\\savestack{\\tmpbox}{\\stretchto{%
-  \\scaleto{%
-    \\scalerel*[\\widthof{\\ensuremath{#1}}]{\\kern-.6pt\\bigwedge\\kern-.6pt}%
-    {\\rule[-\\textheight/2]{1ex}{\\textheight}}%WIDTH-LIMITED BIG WEDGE
-  }{\\textheight}% 
-}{0.5ex}}%
-\\stackon[1pt]{#1}{\\tmpbox}%
-}
-\\parskip 1ex
+$1
 
 \\allsectionsfont{\\normalfont\\scshape}
 \\renewcommand\\thesubsection{\\alph{subsection})}
@@ -116,7 +94,7 @@
 \\addtocounter{theorem}{0}
 
 
-\\newcommand{\\docname}{$1}
+\\newcommand{\\docname}{$2}
 
 \\title{
 \\normalfont \\normalsize 

@@ -1,5 +1,5 @@
 /*
-LaTeX Package keymap for Windows
+LaTeX Package keymap
 */
 [
 	// Show panel
@@ -163,7 +163,6 @@ LaTeX Package keymap for Windows
 	"context":  
 		[
 			{"key": "selector", "operator": "equal", "operand": "string.other.math, meta.environment.math"},
-			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
 			{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true }
 		]
 	},
@@ -172,60 +171,68 @@ LaTeX Package keymap for Windows
 	"context":  
 		[
 			{"key": "selector", "operator": "equal", "operand": "string.other.math, meta.environment.math"},
-			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
 			{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true }
 		]
 	},
 
-	{ "keys": ["j", "j"], "command": "insert_snippet", "args": {"contents": "\\\\$0"}, 
+	{ "keys": ["v", "v"], "command": "insert_snippet", "args": {"contents": "\\vec{$1}$0"}, 
 	"context":  
 		[
-			{"key": "selector", "operator": "equal", "operand": "text.tex.latex"},
-			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+			{"key": "selector", "operator": "equal", "operand": "string.other.math, meta.environment.math"},
 			{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true }
 		]
 	},
 
-	{ "keys": ["c", "c"], "command": "insert_snippet", "args": {"contents": "\\\\${1:commandname}{${2:input}}$0"}, 
+	{ "keys": ["m", "m"], "command": "insert_snippet", "args": {"contents": "\\mat{$1}$0"}, 
 	"context":  
 		[
-			{"key": "selector", "operator": "equal", "operand": "text.tex.latex"},
-			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+			{"key": "selector", "operator": "equal", "operand": "string.other.math, meta.environment.math"},
 			{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true }
 		]
 	},
-	// { "keys": ["c", "c"], "command": "insert_snippet", "args": {"contents": "\\\\${1:commandname}{${2:input}}{${3:input2}}$0"}, 
-	// "context":  
-	// 	[
-	// 		{"key": "selector", "operator": "equal", "operand": "text.tex.latex"},
-	// 		{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
-	// 		{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true }
-	// 	]
-	// },
+
+	{ "keys": ["t", "t"], "command": "insert_snippet", "args": {"contents": "\\ten{$1}$0"}, 
+	"context":  
+		[
+			{"key": "selector", "operator": "equal", "operand": "string.other.math, meta.environment.math"},
+			{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true }
+		]
+	},
+
+	{ "keys": ["c", "1"], "command": "insert_snippet", "args": {"contents": "\\\\${1:command}$0"}, 
+	"context":  
+		[
+			{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true }
+		]
+	},
+	{ "keys": ["c", "2"], "command": "insert_snippet", "args": {"contents": "\\\\${1:command}{$2}$0"}, 
+	"context":  
+		[
+			{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true }
+		]
+	},
+
+	// delete <> pair
+	{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "Packages/User/LaTeX/MakeCommand.sublime-macro"}},
 
 	// ctrl+l,backspace to remove temporary files
 	{ 	"keys": ["ctrl+l","backspace"], 
 		"context":  [
 			{"key": "selector", "operator": "equal", "operand": "text.tex.latex"}],
-		"command": "delete_temp_files"},
+		"command": "delete_temp_files"
+    },
+
 	// Delete/clear local Cache
 	{ 	"keys": ["ctrl+l","ctrl+d","ctrl+c"], 
 		"context":  [
 			{"key": "selector", "operator": "equal", "operand": "text.tex.latex"}],
-		"command": "clear_local_latex_cache"},
+		"command": "clear_local_latex_cache"
+    },
 
 	// ctrl+l,w to display word count
 	{	"keys": ["ctrl+l", "w"],
 		"context":  [
 			{"key": "selector", "operator": "equal", "operand": "text.tex.latex"}],
-		"command": "texcount" },
-
-// 	{	"keys": ["c", "c"], "command": "insert_snippet", "args": {"contents": "^{$1}$0"}, 
-// 	"context":  
-// 		[
-// 			{"key": "selector", "operator": "equal", "operand": "string.other.math, meta.environment.math"},
-// 			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
-// 			{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true }
-// 		]
-// 	}
+		"command": "texcount" 
+    }
 ]

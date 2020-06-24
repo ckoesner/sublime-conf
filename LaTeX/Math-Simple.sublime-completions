@@ -1,0 +1,103 @@
+{
+        "scope": "text.tex.latex string.other.math, text.tex.latex meta.environment.math",
+
+        "completions":
+        [
+        	//Kleinbuchstaben
+			{ "trigger": "a", "contents": "alpha" },
+			{ "trigger": "b", "contents": "beta" },
+			{ "trigger": "g", "contents": "gamma" },
+			{ "trigger": "d", "contents": "delta" },
+			{ "trigger": "d", "contents": "partial" },
+			{ "trigger": "e", "contents": "epsilon" },
+			{ "trigger": "z", "contents": "zeta"},
+			{ "trigger": "h", "contents": "eta" },
+			{ "trigger": "q", "contents": "theta" },
+			{ "trigger": "i", "contents": "iota" },
+			{ "trigger": "k", "contents": "kappa" },
+			{ "trigger": "l", "contents": "lambda" },
+			{ "trigger": "m", "contents": "mu" },
+			{ "trigger": "n", "contents": "nu" },
+			{ "trigger": "x", "contents": "xi" },
+			{ "trigger": "p", "contents": "pi" },
+			{ "trigger": "r", "contents": "rho" },
+			{ "trigger": "s", "contents": "sigma" },
+			{ "trigger": "t", "contents": "tau" },
+			{ "trigger": "u", "contents": "upsilon" },        
+			{ "trigger": "f", "contents": "phi" },
+			{ "trigger": "c", "contents": "chi" },
+			{ "trigger": "y", "contents": "psi" },
+			{ "trigger": "w", "contents": "omega" },
+			{ "trigger": "v", "contents": "digamma"},
+
+
+			//Grossbuchstaben griechisch
+			{ "trigger": "G", "contents": "Gamma " },
+			{ "trigger": "D", "contents": "Delta " },
+			{ "trigger": "Q", "contents": "Theta " },
+			{ "trigger": "L", "contents": "Lambda " },
+			{ "trigger": "X", "contents": "Xi " },
+			{ "trigger": "P", "contents": "Pi " },
+			{ "trigger": "S", "contents": "Sigma " },
+			{ "trigger": "F", "contents": "Phi " },
+			{ "trigger": "Y", "contents": "Psi " },
+			{ "trigger": "W", "contents": "Omega " },
+
+
+
+			//Einfache Befehle
+			{ "trigger": "0set", "contents": "emptyset " },
+			{ "trigger": "ex", "contents": "exists " },
+			{ "trigger": "sm", "contents": "setminus " },
+			{ "trigger": "ld", "contents": "ldots" },
+			{ "trigger": "cd", "contents": "cdot" },
+			{ "trigger": "cd", "contents": "cdots" },
+			{ "trigger": "fa", "contents": "forall "},
+
+			{ "trigger": "ss", "contents": "subset "},
+			{ "trigger": "sseq", "contents": "subseteq "},
+			{ "trigger": "ss2", "contents": "supset "},
+			{ "trigger": "ss2eq", "contents": "supseteq "},
+			{ "trigger": "qd", "contents": "quad "},
+			{ "trigger": "qqd", "contents": "qquad "},
+			{ "trigger": "prec", "contents": "prec"},
+			{ "trigger": "prec", "contents": "preceq"},
+			{ "trigger": "prec", "contents": "preccurlyeq"},
+			{ "trigger": "bs", "contents": "backslash"},
+			{ "trigger": "tim", "contents": "times"},
+
+
+			//Verknuepfungen
+			{ "trigger": "la", "contents": "langle"},
+			{ "trigger": "ra", "contents": "rangle"},
+			{ "trigger": "cup", "contents": "bigcup"},
+			{ "trigger": "cap", "contents": "bigcap"},
+
+
+			//Pfeile
+			{ "trigger": "lar", "contents": "leftarrow"},
+			{ "trigger": "lar", "contents": "longleftarrow"},
+			{ "trigger": "lar", "contents": "nwarrow"},
+			{ "trigger": "lar", "contents": "swarrow"},
+
+			{ "trigger": "Lar", "contents": "Leftarrow"},
+			{ "trigger": "Lar", "contents": "Longleftarrow"},
+
+			{ "trigger": "rar", "contents": "rightarrow"},
+			{ "trigger": "rar", "contents": "longrightarrow"},
+
+			{ "trigger": "Rar", "contents": "Rightarrow"},
+			{ "trigger": "Rar", "contents": "Longrightarrow"},
+
+			{ "trigger": "lr", "contents": "leftrightarrow"},
+			{ "trigger": "lr", "contents": "longleftrightarrow"},
+
+			{ "trigger": "iff", "contents": "Leftrightarrow"},
+			{ "trigger": "Lr", "contents": "Leftrightarrow"},
+			{ "trigger": "Lr", "contents": "Longleftrightarrow"},
+
+			{ "trigger": "up", "contents": "uparrow"},
+			{ "trigger": "do", "contents": "downarrow"},
+
+        ]
+}

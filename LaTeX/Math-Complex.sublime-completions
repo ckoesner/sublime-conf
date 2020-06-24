@@ -1,0 +1,71 @@
+{
+        "scope": "text.tex.latex string.other.math, text.tex.latex meta.environment.math",
+
+        "completions":
+        [
+			//Zahlenmengen
+			{ "trigger": "C\t komplexe Zahlen", "contents": "\\mathbb{C} " },
+			{ "trigger": "N\t natürliche Zahlen", "contents": "\\mathbb{N} " },
+			{ "trigger": "R\t reelle Zahlen", "contents": "\\R " },
+			{ "trigger": "R\t reelle Zahlen", "contents": "\\R^{$1} " },
+			{ "trigger": "R\t reelle Zahlen", "contents": "\\R^{$1 \\times $2} " },
+			{ "trigger": "R\t reelle Zahlen", "contents": "\\R^{$1 \\times $2 \\times $3} " },
+			{ "trigger": "R\t reelle Zahlen", "contents": "\\R " },
+			{ "trigger": "Z\t ganze Zahlen", "contents": "\\mathbb{Z} " },
+
+			//Einfache Befehle
+			{ "trigger": "prod", "contents": "\\prod_{$1}$0"},
+			{ "trigger": "int\t Integral mit Grenzen", "contents": "\\int_{$1}^{$2} "},
+			{ "trigger": "lim\t Grenzwert mit Index", "contents": "\\lim_{$1} "},
+			{ "trigger": "sum\t Summe mit Index", "contents": "\\sum_{$1}^{$2} "},
+			{ "trigger": "min\t Minimum mit Index", "contents": "\\min_{$1} "},
+			{ "trigger": "max\t Maximum mit Index", "contents": "\\max_{$1} "},
+			{ "trigger": "sup", "contents": "\\sup_{$1}"},
+			{ "trigger": "stack", "contents": "\\substack{$1 \\\\ $2}$0"},
+
+			{ "trigger": "bar", "contents": "\\bar{$1}$0"},
+			{ "trigger": "ul", "contents": "\\underline{$1}$0"},
+			{ "trigger": "bin", "contents": "\\binom{$1}{$2}$0"},
+			{ "trigger": "bss", "contents": "\\boldsymbol{$1}$0"},
+			{ "trigger": "frac", "contents": "\\frac{$1}{$2}$0"},
+			{ "trigger": "sq", "contents": "\\sqrt{$1}"},
+
+			//Mathematik Schriftarten
+			{ "trigger": "it", "contents": "\\mathit{$1}$0"},
+			{ "trigger": "bf", "contents": "\\mathbf{$1}$0"},
+			{ "trigger": "bb", "contents": "\\mathbb{$1}$0"},
+			{ "trigger": "rm", "contents": "\\mathrm{$1}$0"},
+			{ "trigger": "sf", "contents": "\\mathsf{$1}$0"},
+			{ "trigger": "cal", "contents": "\\mathcal{$1}$0"},
+			{ "trigger": "frak", "contents": "\\mathfrak{$1}$0"},
+			{ "trigger": "trm", "contents": "\\textrm{$1}$0"},
+			{ "trigger": "ov", "contents": "\\overline{$0}"},
+			{ "trigger": "hat", "contents": "\\hat{$1}$0"},
+			{ "trigger": "td", "contents": "\\tilde{$1}$0"},
+			{ "trigger": "ch", "contents": "\\check{$1}$0"},
+
+			//Klammern
+			{ "trigger": "kr", "contents": "\\left( $1 \\right)$0"},
+			{ "trigger": "kd", "contents": "\\left\\langle $1 \\right\\rangle$0"},
+			{ "trigger": "ke", "contents": "\\left[ $1 \\right]$0"},
+			{ "trigger": "kg", "contents": "\\left\\\\{ $1 \\right\\\\}$0"},
+			{ "trigger": "floor", "contents": "\\left\\lfloor $1 \\right\\rfloor$0"},
+			{ "trigger": "ceil", "contents": "\\left\\lceil $1 \\right\\rceil$0"},
+
+            { "trigger": "sc", "contents": "\\scalprod{$1}{$2}$0"},
+            { "trigger": "norm", "contents": "\\norm{$1}$0"},
+            { "trigger": "abs", "contents": "\\abs{$1}$0"},
+
+			{ "trigger": "m2", "contents": "$1 & $2 \\\\\\\\ \n$0"},
+			{ "trigger": "m3", "contents": "$1 & $2 & $3 \\\\\\\\ \n$0"},
+			{ "trigger": "m4", "contents": "$1 & $2 & $3 & $4 \\\\\\\\ \n$0"},
+			{ "trigger": "m5", "contents": "$1 & $2 & $3 & $4 & $5 \\\\\\\\ \n$0"},
+
+
+			{ "trigger": "v2", "contents": "\\begin{pmatrix}\n$1 \\\\\\\\ $2 \n\\end{pmatrix}\n$0"},
+			{ "trigger": "v3", "contents": "\\begin{pmatrix}\n$1 \\\\\\\\ $2 \\\\\\\\ $3 \n\\end{pmatrix}\n$0"},
+			{ "trigger": "v4", "contents": "\\begin{pmatrix}\n$1 \\\\\\\\ $2 \\\\\\\\ $3 \\\\\\\\ $4 \n\\end{pmatrix}\n$0"},
+			{ "trigger": "v5", "contents": "\\begin{pmatrix}\n$1 \\\\\\\\ $2 \\\\\\\\ $3 \\\\\\\\ $4 \\\\\\\\ $5 \n\\end{pmatrix}\n$0"}
+
+        ]
+}
