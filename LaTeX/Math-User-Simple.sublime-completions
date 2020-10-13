@@ -3,9 +3,9 @@
 
         "completions":
         [
-			{ "trigger": "prod", "contents": "crossprod"},
-			{ "trigger": "prod", "contents": "kronprod"},
-			{ "trigger": "prod", "contents": "kraoprod"},
-			{ "trigger": "prod", "contents": "hadaprod"}
+			{ "trigger": "prod", "contents": "\\crossprod"},
+			{ "trigger": "prod", "contents": "\\kronprod"},
+			{ "trigger": "prod", "contents": "\\kraoprod"},
+			{ "trigger": "prod", "contents": "\\hadaprod"}
 		]
 }
