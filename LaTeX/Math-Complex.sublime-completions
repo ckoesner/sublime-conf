@@ -17,11 +17,16 @@
 			{ "trigger": "prod", "contents": "\\prod_{$1}$0"},
 			{ "trigger": "int\t Integral mit Grenzen", "contents": "\\int_{$1}^{$2} "},
 			{ "trigger": "lim\t Grenzwert mit Index", "contents": "\\lim_{$1} "},
-			{ "trigger": "sum\t Summe mit Index", "contents": "\\sum_{$1}^{$2} "},
+			{ "trigger": "sum\t Summenzeichen", "contents": "\\sum "},
+			{ "trigger": "sum\t Summe mit Index", "contents": "\\sum_{$1} "},
+			{ "trigger": "sum\t Summe mit Index von bis", "contents": "\\sum_{$1}^{$2} "},
+			{ "trigger": "sqrt\t Wurzel", "contents": "\\sqrt{$1} "},
+			{ "trigger": "sqrt\t Wurzel hoch k", "contents": "\\sqrt[$1]{$2} "},
 			{ "trigger": "min\t Minimum mit Index", "contents": "\\min_{$1} "},
 			{ "trigger": "max\t Maximum mit Index", "contents": "\\max_{$1} "},
 			{ "trigger": "sup", "contents": "\\sup_{$1}"},
 			{ "trigger": "stack", "contents": "\\substack{$1 \\\\ $2}$0"},
+
 
 			{ "trigger": "bar", "contents": "\\bar{$1}$0"},
 			{ "trigger": "ul", "contents": "\\underline{$1}$0"},

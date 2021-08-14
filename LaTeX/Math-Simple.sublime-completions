@@ -47,11 +47,14 @@
 
 			//Einfache Befehle
 			{ "trigger": "0set", "contents": "\\emptyset " },
+			{ "trigger": "inf", "contents": "\\infty " },
+
 			{ "trigger": "ex", "contents": "\\exists " },
 			{ "trigger": "sm", "contents": "\\setminus " },
 			{ "trigger": "ld", "contents": "\\ldots" },
 			{ "trigger": "cd", "contents": "\\cdot" },
 			{ "trigger": "cd", "contents": "\\cdots" },
+			{ "trigger": "in", "contents": "\\in "},
 			{ "trigger": "fa", "contents": "\\forall "},
 
 			{ "trigger": "ss", "contents": "\\subset "},
@@ -66,13 +69,15 @@
 			{ "trigger": "bs", "contents": "\\backslash"},
 			{ "trigger": "tim", "contents": "\\times"},
 
+			{ "trigger": "leq", "contents": "\\leq "},
+			{ "trigger": "geq", "contents": "\\geq "},
+
 
 			//Verknuepfungen
 			{ "trigger": "la", "contents": "\\langle"},
 			{ "trigger": "ra", "contents": "\\rangle"},
 			{ "trigger": "cup", "contents": "\\bigcup"},
 			{ "trigger": "cap", "contents": "\\bigcap"},
-
 
 			//Pfeile
 			{ "trigger": "lar", "contents": "\\leftarrow"},
