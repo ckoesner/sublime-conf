@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+\\begin{theorem}
+	$1
+\\end{theorem}
+$0
+]]></content>
+	<tabTrigger>th</tabTrigger>
+	<scope>text.tex.latex</scope>
+</snippet>

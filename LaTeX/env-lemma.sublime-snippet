@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+\\begin{lemma}
+	$1
+\\end{lemma}
+$0
+]]></content>
+	<tabTrigger>lemma</tabTrigger>
+	<scope>text.tex.latex</scope>
+</snippet>

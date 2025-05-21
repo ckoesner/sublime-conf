@@ -12,9 +12,6 @@
 	{ "keys": ["ctrl+a"], "command": "select_all" },
 	{ "keys": ["ctrl+b"], "command": "build" },
 	{ "keys": ["ctrl+c"], "command": "copy" },
-	// this doesnt work with the latex suite
-	// { "keys": ["ctrl+l"], "command": "expand_selection", "args": {"to": "line"} },
-
 	{ "keys": ["ctrl+m"], "command": "move_to", "args": {"to": "brackets"} },
 	{ "keys": ["ctrl+n"], "command": "new_file" },
 	{ "keys": ["ctrl+o"], "command": "prompt_open_file" },
@@ -45,7 +42,6 @@
 	{ "keys": ["ctrl+shift+tab"], "command": "prev_view_in_stack" },
 	{ "keys": ["ctrl+shift+up"], "command": "swap_line_up" },
 	{ "keys": ["ctrl+shift+down"], "command": "swap_line_down" },
-
 	{ "keys": ["alt+c"], "command": "toggle_comment", "args": { "block": false } },
 
 	{ "keys": ["alt+shift+c"], "command": "toggle_comment", "args": { "block": true } },
@@ -117,6 +113,9 @@
 	{ "keys": ["pageup"], "command": "fuck_this"},
 	{ "keys": ["pagedown"], "command": "fuck_this"},
 
+
+
+
 	{ "keys": ["home"], "command": "move_to", "args": {"to": "bol", "extend": false} },
 	{ "keys": ["end"], "command": "move_to", "args": {"to": "eol", "extend": false} },
 	{ "keys": ["shift+home"], "command": "move_to", "args": {"to": "bol", "extend": true} },
@@ -127,38 +126,26 @@
 	{ "keys": ["ctrl+shift+end"], "command": "move_to", "args": {"to": "eof", "extend": true} },
 
 
-
-
-	// auto completion
-	{ "keys": ["ctrl+space"], "command": "insert_best_completion", "args": {"default": "\t", "exact": true} },
-	{ "keys": ["ctrl+space"], "command": "insert_best_completion", "args": {"default": "\t", "exact": false},
-		"context":
-		[
-			{ "key": "setting.tab_completion", "operator": "equal", "operand": true },
-			{ "key": "preceding_text", "operator": "not_regex_match", "operand": ".*\\b[0-9]+$", "match_all": true },
-		]
-	},
-	
-	{ "keys": ["ctrl+space"], "command": "replace_completion_with_next_completion", "context":
-		[
-			{ "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
-			{ "key": "setting.tab_completion", "operator": "equal", "operand": true }
-		]
-	},
-
-	{ "keys": ["tab"], "command": "next_field", "context":
-		[
-			{ "key": "has_next_field", "operator": "equal", "operand": true }
-		]
-	},
-	// { "keys": ["ctrl+space"], "command": "auto_complete" },
-	// { "keys": ["ctrl+space"], "command": "replace_completion_with_auto_complete", "context":
+	// { "keys": ["ctrl+space"], "command": "replace_completion_with_next_completion", "context":
 	// 	[
 	// 		{ "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
-	// 		{ "key": "auto_complete_visible", "operator": "equal", "operand": false },
 	// 		{ "key": "setting.tab_completion", "operator": "equal", "operand": true }
 	// 	]
 	// },
+
+	{ "keys": ["ctrl+space"], "command": "auto_complete", "args": {"mini": true, "default": "\t",  "commit_single": true},
+		"context":
+		[
+			{ "key": "auto_complete_visible", "operand": false },
+			{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+			{ "key": "preceding_text", "operator": "regex_match", "operand": ".*\\w", "match_all": true },
+		]
+	},
+
+	{ "keys": ["tab"], "command": "expand_snippet", "context":
+		[{ "key": "has_snippet" }, ]
+	},
+	
 	{ "keys": ["tab"], "command": "reindent", "context":
 		[
 			{ "key": "setting.auto_indent", "operator": "equal", "operand": true },
@@ -170,13 +157,6 @@
 	{ "keys": ["tab"], "command": "indent", "context":
 		[
 			{ "key": "text", "operator": "regex_contains", "operand": "\n" }
-		]
-	},
-
-	{ "keys": ["tab"], "command": "commit_completion", "context":
-		[
-			{ "key": "auto_complete_visible" },
-			{ "key": "setting.auto_complete_commit_on_tab" }
 		]
 	},
 
