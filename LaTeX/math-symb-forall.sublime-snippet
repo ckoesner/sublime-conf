@@ -1,6 +1,6 @@
 <snippet>
 	<content>
-		<![CDATA[\\forall]]>
+		<![CDATA[\\forall ]]>
 	</content>
 	<tabTrigger>fa</tabTrigger>
 	<scope>text.tex.latex string.other.math, text.tex.latex meta.environment.math</scope>

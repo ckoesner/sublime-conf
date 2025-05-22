@@ -1,7 +1,7 @@
 <snippet>
 	<content>
-		<![CDATA[\\frac{$1}{$2}]]>
+		<![CDATA[\\geq]]>
 	</content>
-	<tabTrigger>frac</tabTrigger>
+	<tabTrigger>geq</tabTrigger>
 	<scope>text.tex.latex string.other.math, text.tex.latex meta.environment.math</scope>
 </snippet>

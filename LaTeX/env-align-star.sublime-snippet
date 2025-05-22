@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+\\begin{align*}
+	$1
+\\end{align*}
+$0
+]]></content>
+	<tabTrigger>al</tabTrigger>
+	<scope>text.tex.latex</scope>
+</snippet>

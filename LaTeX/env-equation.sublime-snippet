@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+\\begin{equation}
+	$1
+\\end{equation}
+$0
+]]></content>
+	<tabTrigger>eq</tabTrigger>
+	<scope>text.tex.latex</scope>
+</snippet>

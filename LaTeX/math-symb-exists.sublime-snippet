@@ -1,6 +1,6 @@
 <snippet>
 	<content>
-		<![CDATA[\\exists]]>
+		<![CDATA[\\exists ]]>
 	</content>
 	<tabTrigger>ex</tabTrigger>
 	<scope>text.tex.latex string.other.math, text.tex.latex meta.environment.math</scope>
